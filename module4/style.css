@@ -1,0 +1,102 @@
+* {padding: 0; margin: 0; box-sizing: border-box;}
+
+html {
+    height: 100%;
+}
+
+/* navbar */
+header {
+    padding: 10px 100px; /* padding */
+    margin: 0 auto; /* margin */
+    position: fixed; /* position */
+    top: 0; /* top */
+    left: 0; /* left */
+    width: 100vw; /* width */
+    list-style-type: none; /* list-style-type */
+    height: 60px;
+    background-color: #333333;
+    text-align: right;
+}
+
+/* links */
+a {
+    color: #b8e9ff; /* color */
+}
+
+/* body */
+body {
+    background: linear-gradient(45deg,rgba(0, 0, 0, 0.2), #b8e9ffe0); /* background */
+    color:#000; /* color */
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+/* h2 */
+h2 {
+    color: #b8e9ff; /* color */
+    font-size: 1.5em; /* font-size */
+    line-height: 35px; /* line-height */
+}
+
+/* bullet list (unordered list) */
+ul {
+    list-style-type: disc; /* list-style-type */
+    font-size: 1.5em; /* font-size */
+    text-decoration: none; /* text-decoration */
+}
+
+/* blockquote */
+blockquote {
+    margin-left: 20px; /* margin-left */
+    color: #000; /* color */
+    font-size: 1.5em;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif; /* font-family */
+    color: #b8e9ff; /* font-color */
+}
+
+/* class for h1 element */
+.header1 {
+    background-color: #333333;
+    padding: 10px;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#header1-container {
+    display: flex;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+main {
+    position: relative;
+    top: 60px;
+    padding: 10px;
+    width: 550px;
+    margin: 0 auto;
+}
+
+main h2 {
+    background-color: #333333;
+}
+
+main a {
+    color: #333333;
+}
+
+header a {
+    text-decoration: none;
+}
+
+main h2, h3, p, table {
+    width: 100%;
+    padding: 5px 10px;
+}

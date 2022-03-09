@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' href='style.css' />
+    <title>bmi calculator</title>
+</head>
+
+<body>
+    <main>
+        <h2>BMI Calculator</h2>
+        <form action="index.html">
+            <span>
+                <!-- HEIGHT -->
+                <label for="height">Height: </label>
+                <input type="text" name="height" id="height" placeholder="enter your height" >
+                <!-- HEIGHT UNITS -->
+                <label for="height-units">in </label>
+                <select name="height-units" id="height-units" >
+                    <option value="cm" selected>cm</option>
+                    <option value="m">m</option>
+                    <option value="in">in</option>
+                    <option value="ft">ft</option>
+                </select>
+            </span>
+            <span>
+                <!-- WEIGHT -->
+                <label for="weight">Weight: </label>
+                <input type="text" name="weight" id="weight" placeholder="enter your weight" >
+                <!-- WEIGHT UNITS -->
+                <label for="weight-units">in </label>
+                <select name="weight-units" id="weight-units">
+                    <option value="kg" selected>kg</option>
+                    <option value="g">g</option>
+                    <option value="lb">lb</option>
+                </select>
+            </span>
+            <!-- SUBMIT BUTTON -->
+            <input type="submit" value="Calculate">
+        </form>
+        <h3>your bmi:</h3>
+        <!-- RESULTS -->
+        <h4 id="result"></h4>
+        <h4 id="result-message"></h4>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

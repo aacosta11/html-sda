@@ -1,0 +1,71 @@
+* {box-sizing: border-box;}
+
+html {
+    min-width: 400px;
+    width: 80%; /* width */
+    height: auto; /* height */
+    padding: 10px 15px; /* padding */
+    border: 15px #ffffff; 
+    border-style: double; /* border style */
+    background-image: url('https://apod.nasa.gov/apod/image/2203/NGC2841_20220114_72H.jpg'); /* background image */
+    background-size: 200%;
+    background-position: 0%; /* background position */
+    margin: 0 auto;
+    animation: backdrop 15s alternate-reverse infinite;
+}
+
+@keyframes backdrop {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }    
+}
+
+body {
+    padding: 15px;
+    background-color: #dcdcdc; /* background-color */
+    
+}
+
+header h1 { /* header h1 */
+    color: #0000ff; /* color */
+    margin-left: 25px; /* margin-left */
+}
+
+/* links */
+a { 
+    text-decoration: overline;
+    color: #00ccff;
+    padding: 0 5px;
+}
+
+/* lists */
+ul {
+    background-color: rgb(167, 167, 167);
+    padding: 15px;
+}
+
+li {
+    margin-left: 15px;
+    color: #ffffff;
+    border-bottom: 1px solid black;
+}
+
+li:nth-child(odd) {
+    color: #181818;
+}
+
+/* tables */
+table {
+    background-color: #dcdcdc;
+    width: 50%;
+    padding: 15px 10px;
+    text-align: left;
+}
+
+th {
+    text-decoration: underline;
+}
+

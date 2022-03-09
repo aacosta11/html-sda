@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' href='style.css' />
+    <title>checkout</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">home</a> / <a href="#">checkout</a>
+    </header>
+    <h1>Checkout</h1>
+    <h2>
+        <img src="https://n4.sdlcdn.com/imgs/c/8/j/Jansport-Black-Backpack-SDL872810355-2-7d4ab.jpg"
+            alt="jansport-backpack" width="50px" id="jansport-backpack" />
+        <strong><b><i>JanSport Backpack</i></b></strong>
+    </h2>
+    <br />
+    <!-- form! -->
+    <form action="success.html">
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="name">Name:</label></td> <!-- name! -->
+                    <td><input type="text" name="name" id="name" /></td>
+                </tr>
+                <tr>
+                    <td><label for="address1">Address 1:</label></td> <!-- address 1! -->
+                    <td><input type="text" name="address1" id="address1" /></td>
+                </tr>
+                <tr>
+                    <td><label for="address2">Address 2:</label></td> <!-- address 2! -->
+                    <td><input type="text" name="address2" id="address2" /></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City:</label></td> <!-- city! -->
+                    <td><input type="text" name="city" id="city" /></td>
+                </tr>
+                <tr>
+                    <td><label for="state">State:</label></td> <!-- state! -->
+                    <td><input type="text" name="state" id="state" /></td>
+                </tr>
+                <tr>
+                    <td><label for="zip">Zip:</label></td> <!-- zip! -->
+                    <td><input type="text" name="zip" id="zip" /></td>
+                </tr>
+                <tr>
+                    <td><label for="card">Credit Card:</label></td>
+                    <td><input type="text" name="card" id="card" /></td>
+                </tr>
+                <tr>
+                    <td><label for="exp">Expiration:</label></td>
+                    <td><input type="text" name="exp" id="exp" /></td>
+                </tr>
+                <tr>
+                    <td><label for="cvv">CVV:</label></td>
+                    <td><input type="text" name="cvv" id="cvv" /></td>
+                </tr>
+                <tr>
+                    <td><label for="shipping">Shipping:</label></td> <!-- expected shipping! -->
+                    <td><input type="date" name="shipping" id="shipping"></td>
+                </tr>
+
+            </tbody>
+        </table>
+        <input type="submit" value="Submit" /> <!-- submit! -->
+        <h3>Shipping Rates:</h3>
+        <p>
+            1-day: $15.00<br />
+            3-day: $9.99<br />
+            7-day: $4.99<br />
+            14-day: FREE<br />
+        </p>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' href='style.css' />
+    <title>media company</title>
+</head>
+
+<body>
+    <main>
+        <h1 id="title">Sign Up</h1>
+        <form action="index.html" method="post" id="signup-form" >
+            <!-- NOTE: i didn't use any html validations like 'required' or 'minlength' -->
+
+            <!-- USERID -->
+                <span id="userid">
+                    <label for="userid-input">User ID * &nbsp;<small class="error-message " id="userid-error">Must be 5 - 12 characters long</small></label>
+                    <input type="text" name="userid" id="userid-input" placeholder="User ID" minlength="5" />
+                </span>
+            <!-- PASSWORD -->
+                <span id="password">
+                    <label for="password-input">Password * &nbsp;<small class="error-message " id="password-error">Must be 7 - 12 characters long</small></label>
+                    <input type="password" name="password" id="password-input" placeholder="Password" />
+                </span>
+            <!-- NAME -->
+                <span id="name">
+                    <label for="name-input">Name * &nbsp;<small class="error-message " id="name-error">Letters only, between 1 - 12 characters long</small></label>
+                    <input type="text" name="name" id="name-input" placeholder="Name" />
+                </span>
+            <!-- COUNTRY -->
+                <span id="country">
+                    <label for="country-input">Country * &nbsp;<small class="error-message " id="country-error">Select a country, plz</small></label>
+                    <select name="country" id="country-input" >
+                        <!-- dropdown of some countries -->
+                        <option value="United States">United States</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Canada">Canada</option>
+                        <option value="China">China</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="India">India</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Kazakhstan">Kazakhstan</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Netherlands">Netherlands</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Spain">Spain</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="other">other</option>
+                    </select>
+                </span>
+            <!-- ADDRESS -->
+                <span id="address">
+                    <label for="address-input">Address</label>
+                    <input type="text" name="address" id="address-input" placeholder="Address" />
+                </span>                
+            <!-- ZIPCODE -->
+                <span id="zipcode">
+                    <label for="zipcode-input">Zip code * &nbsp;<small class="error-message " id="zipcode-error">Numbers only, 5 characters long</small></label>
+                    <input type="text" name="zipcode" id="zipcode-input" placeholder="Zip code" />
+                </span>
+            <!-- LANGUAGE -->
+                <span id="language" >
+                    <label for="language">Select a language</label>
+                    <div class="radio-option">
+                        <label for="english">English</label>
+                        <input type="radio" name="language" id="english" value="english" checked>
+                    </div>
+                    <div class="radio-option">
+                        <label for="spanish">Spanish</label>
+                        <input type="radio" name="language" id="spanish" value="spanish" >
+                    </div>
+                    <div class="radio-option">
+                        <label for="javascript">JavaScript</label>
+                        <input type="radio" name="language" id="javascript" value="javascript" >
+                    </div>
+                </span>
+            <!-- SUBMIT -->
+                <button type="submit" id="submit">Submit</button>
+                <!-- check mark if all inputs validate correctly -->
+                <div id="success"></div>
+                <p>* required fields</p>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
